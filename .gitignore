@@ -1,0 +1,15 @@
+build/
+out/
+dist/
+node_modules/
+.venv/
+__pycache__/
+
+# IDE配置
+.idea/
+.vscode/
+
+# 日志
+logs/
+*.log
+.yoyo/
