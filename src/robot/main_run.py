@@ -4,6 +4,8 @@ import dotenv
 import os
 
 dotenv.load_dotenv()
+session = requests.Session()
+session.trust_env = False
 
 def main(data):
 	if not isinstance(data, dict):
