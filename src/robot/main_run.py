@@ -18,6 +18,6 @@ def main(data):
 		return json.dumps([{"code":1, "meaasge":"get weather"}])
 	
 	if code == "1":
-		requests.get(f"https://restapi.amap.com/v3/weather/weatherInfo?key={os.getenv('GAODE')}&city=100000")
+		return requests.get(f"https://restapi.amap.com/v3/weather/weatherInfo?key={os.getenv('GAODE')}&city=100000").text
 	
-	return "401 Eooror"
+	return "401 Error"
